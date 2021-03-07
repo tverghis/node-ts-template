@@ -1,0 +1,29 @@
+{
+  "name": "node-ts-template",
+  "version": "0.1.0",
+  "description": "A template project for my Node.js projects written in TypeScript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "$(npm bin)/tsc -p .",
+    "watch": "$(npm bin)/tsc -w",
+    "test": "$(npm bin)/jest test/*.spec.ts",
+    "coverage": "$(npm bin)/jest test/*.spec.ts --coverage",
+    "fmt": "$(npm bin)/prettier --check ."
+  },
+  "keywords": [],
+  "author": "Tarun Verghis (tarun.verghis@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-typescript": "^7.13.0",
+    "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
